@@ -1,0 +1,800 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="desktop">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <!-------------------START DO NOT REMOVE THESE METAS CONPULSORY FOR REACT ----------------------->
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:url" content="" />
+  <meta itemprop="name" content="" />
+  <meta itemprop="description" content="" />
+  <meta itemprop="image" content="" />
+  <link rel="canonical" href="" />
+  <meta name="author" content="Sajjad Hussain" />
+  <meta name="google-site-verification" content="" />
+  <meta name="msvalidate.01" content="" />
+  <meta name="y_key" content="" />
+  <meta property="og:site_name" content="Celerant360 - Optimized Eccommerce Framework with cutting edge technologies" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/custom.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+  <link rel="icon" type="image/png" href="./fav.png" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+    crossorigin="anonymous"></script>
+  <!-------------------END DO NOT REMOVE THESE METAS CONPULSORY FOR REACT----------------------->
+
+  <link rel="stylesheet" href="http://template1icumulus-com.ntc5-p2stl.ezhostingserver.com/css/ie.style.css" />
+  <link rel="stylesheet" href="http://template1icumulus-com.ntc5-p2stl.ezhostingserver.com/css/style.css" />
+  <link rel="stylesheet" href="http://template1icumulus-com.ntc5-p2stl.ezhostingserver.com/css/style_custom.css"
+    type="text/css" media="all" />
+  <link rel="stylesheet" href="http://template1icumulus-com.ntc5-p2stl.ezhostingserver.com/css/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="http://template1icumulus-com.ntc5-p2stl.ezhostingserver.com/css/owl.theme.default.min.css" />
+  <link rel="stylesheet" media="all"
+    href="http://template1icumulus-com.ntc5-p2stl.ezhostingserver.com/css/magiczoom.css" />
+  <link type="text/css" rel="stylesheet"
+    href="http://template1icumulus-com.ntc5-p2stl.ezhostingserver.com/css/common.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <style>
+    @font-face {
+      font-family: "Montserrat-Light";
+      src: url("../fonts/Montserrat-Light.otf") format("truetype");
+    }
+
+    @font-face {
+      font-family: "Montserrat-Italic";
+      src: url("../fonts/Montserrat-Italic.otf") format("truetype");
+    }
+
+    @font-face {
+      font-family: "Montserrat-Bold";
+      src: local("Montserrat-Bold"), local("Montserrat-Bold"),
+        url(../fonts/Montserrat-Bold.woff) format("woff");
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "Montserrat-SemiBold";
+      src: local("Montserrat-SemiBold"), local("Montserrat-SemiBold"),
+        url(../fonts/Montserrat-Bold.woff) format("woff");
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "Montserrat-Regular";
+      src: local("Montserrat-Regular"), local("Montserrat-Regular"),
+        url(../fonts/Montserrat-Regular.woff) format("woff");
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "Montserrat-Medium";
+      src: local("Montserrat-Medium"), local("Montserrat-Medium"),
+        url(../fonts/Montserrat-Medium.woff) format("woff");
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "Montserrat-ExtraBold";
+      src: local("Montserrat-ExtraBold"), local("Montserrat-ExtraBold"),
+        url(../fonts/Montserrat-ExtraBold.woff) format("woff");
+      font-display: swap;
+    }
+
+    .breadcrumb li,
+    .breadcrumb li a,
+    .breadcrumb-item.active,
+    .breadcrumb-item.active a,
+    .breadcrumb-item+.breadcrumb-item::before {
+      font-size: 12px;
+      font-family: "Montserrat-Medium";
+      display: inline-block;
+      color: #000000;
+    }
+
+    #category #filterby {
+      font-family: "Montserrat-Bold";
+      color: #000;
+      font-size: 16px;
+      background: none;
+      border: 0;
+      text-align: left;
+    }
+
+    #category .accordion-flush .accordion-item {
+      border: none;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+
+    #category .accordion-button {
+      font-family: "Montserrat-Bold" !important;
+      color: #000 !important;
+      font-size: 16px !important;
+      width: 100%;
+      text-align: left;
+      background: none;
+      border: 0;
+      padding-left: 0;
+      box-shadow: none;
+      padding: 5px 0 10px 0;
+    }
+
+    #category .accordion-body span {
+      font-family: "Montserrat-Medium";
+      color: #000;
+      font-size: 12px;
+      margin-bottom: 7px;
+    }
+
+    #category .accordion-body a {
+      color: #000;
+      width: 100%;
+      display: inline-block;
+      font-size: 12px;
+      font-family: "Montserrat-Medium";
+      margin-bottom: 7px;
+      text-decoration: none;
+    }
+
+    #category .accordion-body .form-check {
+      padding-left: 0;
+    }
+
+    #category .accordion-body .form-check .form-check-input {
+      position: relative;
+      margin-top: 0;
+      margin-left: 0;
+    }
+
+    #category .accordion-body .form-check span {
+      width: auto !important;
+      margin-bottom: 7px;
+      font-size: 12px;
+      font-family: "Montserrat-Medium";
+    }
+
+    #category .accordion-body label {
+      color: #000;
+      width: auto;
+      font-size: 12px;
+      font-weight: normal;
+      font-family: "Montserrat-Medium";
+      margin-bottom: 7px;
+      margin-right: 7px;
+    }
+
+    #category .accordion-button::after {
+      content: "+";
+      color: #9f9f9f;
+      font-family: "Montserrat-Bold";
+      background-image: none;
+      font-size: 20px;
+      float: right;
+    }
+
+    #category .accordion-button:not(.collapsed)::after {
+      font-size: 20px;
+      content: "-";
+      color: #9f9f9f;
+      font-family: "Montserrat-Bold";
+      background-image: none;
+      float: right;
+      transform: rotate(0);
+    }
+
+    #category .catheading h1 {
+      font-family: "Montserrat-Bold";
+      font-size: 20px;
+      color: #000;
+    }
+
+    #Pagination {
+      width: 50%;
+      text-align: center;
+      padding: 20px 15px;
+      justify-content: flex-end !important;
+    }
+
+    #Pagination nav {
+      width: auto;
+      max-width: max-content;
+    }
+
+    .pagination {
+      padding: 3px 0 0 0;
+      width: auto;
+      float: left;
+    }
+
+    #Pagination ul li {
+      text-decoration: none;
+      color: #000000;
+      font-weight: normal;
+      list-style-type: none;
+      height: 42px;
+      width: 40px;
+      display: inline-block;
+      border: 1px solid #ccc;
+      text-align: center;
+      line-height: 40px;
+    }
+
+    #Pagination ul li a {
+      color: #000000;
+      font-size: 12px;
+      font-weight: normal;
+      font-family: "Montserrat-Regular";
+      border: 0px;
+      padding: 0;
+    }
+
+    #category a.page-link {
+      font-size: 12px;
+    }
+
+    #category .page-item:first-of-type a.page-link {
+      font-size: 12px;
+    }
+
+    #category .page-item:last-of-type a.page-link {
+      font-size: 12px;
+    }
+
+    #category #cat-search-container input {
+      border: solid 1px #e5e5e5;
+      margin-top: 5px;
+    }
+
+    #category div#catproductinner .display-mode {
+      text-align: right;
+    }
+
+    #PaginationBottom {
+      width: 100%;
+      max-width: max-content;
+      text-align: center;
+      padding: 20px 15px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      justify-content: flex-end !important;
+      max-width: max-content;
+      margin-bottom: 20px;
+    }
+
+    #PaginationBottom nav {
+      width: 100%;
+      max-width: max-content;
+    }
+
+    #PaginationBottom ul li {
+      text-decoration: none;
+      color: #000000;
+      font-weight: normal;
+      list-style-type: none;
+      height: 42px;
+      width: 40px;
+      display: inline-block;
+      border: 1px solid #ccc;
+      text-align: center;
+      line-height: 40px;
+    }
+
+    #PaginationBottom ul li a {
+      color: #000000;
+      font-size: 12px;
+      font-weight: normal;
+      font-family: "Montserrat-Regular";
+      border: 0px;
+      padding: 0;
+    }
+
+    div#catproductinner {
+      margin-top: 0;
+    }
+
+    div#catproductinner .categoryselect span {
+      font-size: 12px;
+      font-weight: normal;
+      font-family: "Montserrat-Regular";
+      color: #000000;
+    }
+
+    #category .totalproduct .catgrey {
+      font-size: 12px;
+      font-family: "Montserrat-Regular";
+      color: #000000;
+    }
+
+    #category select {
+      font-family: "Montserrat-Regular";
+      font-size: 12px;
+      color: #000000;
+      border: solid 1px #dedcdc;
+      background-color: #f2f2f2;
+      padding: 1px 5px 2px;
+      height: 30px;
+      display: inline;
+    }
+
+    #category select.two {
+      width: 50%;
+    }
+
+    #category select.one {
+      width: 26%;
+    }
+
+    #category div#catproductinner .categoryselect .totalproduct span {
+      font-size: 12px;
+      font-weight: normal;
+      font-family: "Montserrat-Regular";
+    }
+
+    #category .category-descrption {
+      font-size: 12px;
+      font-weight: normal;
+      font-family: "Montserrat-Regular";
+      color: #000000;
+    }
+
+    /******************* THUMBNAIL ************/
+    .thumbnails {
+      margin: 15px 0 0 0;
+      display: flex !important;
+    }
+
+    .productListing {
+      margin: 0 0 28px 0;
+      display: inline-block;
+      border: solid 1px #e5e5e5;
+      padding: 10px;
+      border-radius: 0;
+      position: relative;
+      width: 100%;
+      transition: ease-out 0.25s;
+      transition-delay: 0.25s;
+    }
+
+    .productListing .image img {
+      max-width: 100%;
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
+    }
+
+    .productListing span {
+      padding: 0;
+      float: left;
+      width: 100%;
+      font-size: 12px;
+      color: #000000;
+      font-family: "Montserrat-Regular";
+    }
+
+    .productListing .brand {
+      height: 25px;
+      overflow: hidden;
+      margin: 10px 0 0 0;
+      padding: 0 0 0 5px;
+      text-transform: uppercase !important;
+      font-size: 12px !important;
+      color: #000000;
+    }
+
+    .productListing .name {
+      overflow: hidden;
+      padding: 0 5px 0 5px;
+      font-weight: bold;
+      text-transform: capitalize;
+      height: 45px;
+      font-size: 12px;
+      color: #000000;
+    }
+
+    .productListing .instock {
+      text-transform: capitalize;
+      margin-bottom: 10px;
+      display: inline-block;
+      width: 100%;
+      font-size: 12px;
+    }
+
+    .productListing .pricing {
+      padding: 10px 0 0 0;
+      border-top: 0 solid #c5c5c5;
+    }
+
+    .productListing .pricing strong {
+      float: left;
+      width: 100%;
+      font-family: "Montserrat-Bold";
+      font-weight: normal;
+      font-size: 12px;
+      padding: 0;
+    }
+
+    .productListing .pricing .itemPrice {
+      color: #707070;
+    }
+
+    .productListing .pricing .listPrice {
+      color: #000000;
+      text-decoration: line-through;
+      font-family: "Montserrat-Regular";
+    }
+
+    .productListing .pricing .salePrice {
+      color: #bc0000;
+    }
+
+    .productListing .details {
+      color: #fff;
+      background-color: #707070;
+      font-family: "Montserrat-Regular";
+      width: 140px;
+      height: 40px;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 12px;
+      line-height: 40px;
+      visibility: hidden;
+      max-width: 90%;
+      border-radius: 20px;
+      display: inline-block;
+      margin: 10px 0;
+    }
+
+    .productListing:hover .details {
+      visibility: visible;
+      transition: 0.6s;
+    }
+
+    .productListing .cart-button {
+      opacity: 0;
+      transition: ease-in 0.25s;
+      transition-delay: 0.25s;
+    }
+
+    .productListing:hover .cart-button {
+      opacity: 1;
+    }
+
+    #catproducts .list-group-item {
+      max-width: 100%;
+      flex: 0 0 100%;
+      border: none;
+      padding: 0 15px;
+    }
+
+    #catproducts .productListing:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 10px #000;
+      border: none;
+    }
+
+    #catproducts .list-group-item .productListing:hover {
+      transform: none !important;
+      box-shadow: none;
+      border: solid 1px #000;
+    }
+
+    #catproducts .list-group-item .productListing .name {
+      margin-bottom: 0;
+    }
+
+    #catproducts .list-group-item .productListing .image {
+      float: left;
+      width: 30%;
+    }
+
+    #catproducts .list-group-item .productListing .caption {
+      float: right;
+      width: 70%;
+    }
+
+    #catproducts .list-group-item .productListing .pricing {
+      width: 50%;
+      text-align: left;
+    }
+
+    #catproducts .list-group-item .productListing .instock {
+      width: 70%;
+    }
+
+    /******************* THUMBNAIL ************/
+
+    @media (max-width: 991px) {
+      div#catproductinner {
+        margin-top: 15px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      #category #filterby {
+        text-align: center;
+        padding: 6px 10px 0 0;
+      }
+
+      #Pagination {
+        width: 100%;
+        justify-content: left !important;
+        margin: 5px 0 0 0;
+      }
+
+      #category div#catproductinner .display-mode {
+        text-align: left;
+        margin-top: 7px;
+      }
+
+      #category .accordion-flush .accordion-item {
+        display: none;
+      }
+
+      #category * #filterby::after {
+        content: "-";
+        color: #000;
+        font-family: "Montserrat-Bold";
+        background-image: none;
+        font-size: 20px;
+        float: right;
+      }
+
+      #category #filterby:not(.collapsed)::after {
+        font-size: 20px;
+        content: "+";
+        color: #000;
+        font-family: "Montserrat-Bold";
+        background-image: none;
+        float: right;
+      }
+    }
+
+    .tooltip-inner {
+      max-width: 350px !important;
+      background-color: black;
+    }
+  </style>
+  <meta charset="UTF-8" />
+
+
+  <script>ship_method_id = ''</script>
+</head>
+
+<body>
+  <section id="contentHolder">
+    <div class="email-popup" style="display: none">
+      <div class="email-wrapper" style="
+            background: url(ccms/default/cache/file/748C89A5-A78B-B278-F64B2B8A93135181.jpg);
+          ">
+        <div class="close-popup"><i class="fa fa-times"></i></div>
+        <div class="newsletter-logo">
+          <img alt=""
+            src="http://template1icumulus-com.ntc5-p2stl.ezhostingserver.com/ccms/default/assets/Image/sample-logo.png"
+            style="width: 300px; height: 200px" />
+        </div>
+        <div class="newsletter-text" style="color: #fff">
+          <h4 style="text-align: center">
+            Sign up for our email newsletter to receive updates, discounts,
+            and coupons.
+          </h4>
+        </div>
+        <form action="/toolset/emailsignup.cfm" method="post">
+          <div class="form-row">
+            <div class="form-group col-9">
+              <label for="emailSubscription" style="color: #fff">Email</label>
+              <input type="email" name="emailSubscription" class="form-control" />
+            </div>
+            <div class="form-group col-3 mt-4 pt-2">
+              <input type="submit" value="Submit" class="btn" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="popup-bg"></div>
+    <!-- **** START CONTENT HOLDER ***** -->
+    <div id="root"></div>
+    <!-- **** END CONTENT HOLDER **** -->
+    <header>
+      <div id="top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 one text-left">
+              <p>
+                Monday - Friday 10AM - 8PM, Saturday 10AM&nbsp;- 6PM
+                <a href="javascript:;"><i class="glyphicon glyphicon-earphone"></i>+XXX-XXX-XXXX</a>
+              </p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 one text-right"></div>
+          </div>
+        </div>
+      </div>
+      <div id="middle">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-12 col-12 logo">
+              <p>
+                <a href="/">
+                  <img alt=""
+                    src="http://template1icumulus-com.ntc5-p2stl.ezhostingserver.com/ccms/default/assets/Image/icon-american-flag.png"
+                    style="width: 329px; height: 153px" />
+                </a>
+              </p>
+            </div>
+            <div class="col-lg-6 col-md-4 col-sm-8 col-7 search">
+              <form role="search" action="/search" method="post" name="myForm" onsubmit="" required>
+                <input name="Search" placeholder="Search " type="text" />
+                <button type="submit"><i class="fas fa-search"></i></button>
+              </form>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 col-5 profile">
+              <a href="/login.cfm"><i class="fas fa-user"></i>My Account</a>
+              <a href="/cart.cfm" id="header-cart"><i class="fas fa-shopping-cart"></i>cart<span>(0)</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-dark static-top">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <i class="fas fa-angle-down down0" onclick='fntoggle("down0")'></i>
+                <a class="nav-link" href="index.cfm?category=firearms">Firearms</a>
+              </li>
+              <li class="nav-item active">
+                <i class="fas fa-angle-down down1" onclick='fntoggle("down1")'></i>
+                <a class="nav-link" href="index.cfm?category=ammunition">
+                  Ammunition</a>
+              </li>
+              <li class="nav-item active">
+                <i class="fas fa-angle-down down2" onclick='fntoggle("down2")'></i>
+                <a class="nav-link" href="index.cfm?category=clothing">Clothing</a>
+              </li>
+              <li class="nav-item active">
+                <i class="fas fa-angle-down down3" onclick='fntoggle("down3")'></i>
+                <a class="nav-link" href="index.cfm?category=gear">Gear</a>
+              </li>
+              <li class="nav-item active">
+                <i class="fas fa-angle-down down4" onclick='fntoggle("down4")'></i>
+                <a class="nav-link" href="index.cfm?category=Optics">Optics</a>
+              </li>
+              <li class="nav-item active">
+                <i class="fas fa-angle-down down5" onclick='fntoggle("down5")'></i>
+                <a class="nav-link" href="index.cfm?category=personal-defense">Personal Defense</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--footer-->
+    <footer>
+      <div class="innerfooter">
+        <div class="container">
+          <div class="row desktop">
+            <div class="col-lg-3 col-md-6 col-12 unique">
+              <span class="nav-title collapsed" data-toggle="collapse" data-target="#accordzero"
+                aria-expanded="false">customer service</span>
+              <div id="accordzero" class="collapse">
+                <p>
+                  <a href="/login.cfm"><i class="fa fa-angle-double-right"></i> Your Account</a>
+                  <a href="http://template1icumulus-com.ntc5-p2stl.ezhostingserver.com/ccms/index.cfm/contact-us/"><i
+                      class="fa fa-angle-double-right"></i> Contact Us</a><a
+                    href="http://template1icumulus-com.ntc5-p2stl.ezhostingserver.com/giftcard.cfm"><i
+                      class="fa fa-angle-double-right"></i> Gift Cards</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 unique">
+              <span class="nav-title collapsed" data-toggle="collapse" data-target="#accordone"
+                aria-expanded="false">information</span>
+              <div id="accordone" class="collapse">
+                <p>
+                  <a
+                    href="http://template1icumulus-com.ntc5-p2stl.ezhostingserver.com/ccms/index.cfm/terms-and-conditions/"><i
+                      class="fa fa-angle-double-right"></i>Terms and
+                    Conditions</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 unique">
+              <span class="nav-title collapsed" data-toggle="collapse" data-target="#accordtwo"
+                aria-expanded="false">company info</span>
+              <div id="accordtwo" class="collapse">
+                <a href="http://template1icumulus-com.ntc5-p2stl.ezhostingserver.com/ccms/index.cfm/privacy-policy/"><i
+                    class="fa fa-angle-double-right"></i> Privacy Policy</a>
+                <a href="http://template1icumulus-com.ntc5-p2stl.ezhostingserver.com/ccms/index.cfm/about-us/"><i
+                    class="fa fa-angle-double-right"></i> About Us</a>
+                <a
+                  href="http://template1icumulus-com.ntc5-p2stl.ezhostingserver.com/ccms/index.cfm/shipping-and-returns/"><i
+                    class="fa fa-angle-double-right"></i> Shipping and
+                  Returns</a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 normal">
+              <form action="/toolset/emailsignup.cfm" class="navbar-form" method="post">
+                <span class="nav-title">Subscribe Newsletter</span>
+                <p>
+                  Our weekly newsletter provides you with the latest and most
+                  important happenings in the industry.
+                </p>
+                <div class="form-control">
+                  <input class="input" name="emailSubscription" placeholder="Enter e-mail address" type="text"
+                    required="required" />
+                  <button class="btn" type="submit">Subscribe</button>
+                </div>
+              </form>
+              <a href="http://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+              <!---<a href="##"><i class="fab fa-facebook"></i></a>
+				<a href="##"><i class="fab fa-twitter-square"></i></a>
+				<a href="##"><i class="fab fa-pinterest"></i></a>
+				<a href="##"><i class="fab fa-instagram"></i></a>
+				<a href="##"><i class="fab fa-linkedin"></i></a>---->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer-bottom">
+        <div class="copyright container">
+          <div class="row">
+            <div class="col-lg-4 col-md-3 col-12 text-left reserve">
+              <p>
+                &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                &nbsp;All Rights Reserved.
+                <a href="https://www.celerant.com/cumulus-retail/" target="_blank">Ecommerce Site by Cumulus Retail</a>
+              </p>
+            </div>
+            <div class="col-lg-4 col-md-5 col-12 text-center payment">
+              <a href="#"><i class="fab fa-cc-discover"></i></a>
+              <a href="#"><i class="fab fa-cc-mastercard"></i></a>
+              <a href="#"><i class="fab fa-cc-paypal"></i></a>
+              <a href="#"><i class="fab fa-cc-amex"></i></a>
+              <a href="#"><i class="fab fa-cc-visa"></i></a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12 text-right company">
+              <p>
+                ecommerce site by
+                <a href="https://www.celerant.com/cumulus-retail/">
+                  <img alt="Cumulus retail logo"
+                    src="http://template1icumulus-com.ntc5-p2stl.ezhostingserver.com/images/cumulus_logo.svg" />
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+</body>
+
+</html>
